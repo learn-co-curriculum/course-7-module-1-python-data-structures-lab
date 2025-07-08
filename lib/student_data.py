@@ -9,4 +9,10 @@ students = [
     (105, "Eve Lewis", "Mathematics"),
 ]
 
-# TODO: Add more sample students if necessary
+def display_students(student_list):
+    """Display student records"""
+    print(f"\nStudent Records:")
+    for sid, name, major in student_list:
+        print(f"ID: {sid} | Name: {name} | Major: {major}")
+
+display_students(student_list=students)
