@@ -5,5 +5,6 @@ def unique_majors(student_list):
     Return a set of unique student majors using set comprehension.
     Extract the major field from each student record.
     """
-    # TODO: Implement this function
-    pass
+    major_set = {student[2] for student in student_list}
+    return major_set
+
