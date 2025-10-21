@@ -5,6 +5,14 @@ def student_generator(student_list, major):
     Generate student records filtered by major lazily for memory efficiency
     using a Python generator.
     """
-    pass
+    for student in student_list:        
+        if student[2] ==major: 
+            yield student
+    
 
-#TEST MERGE
+    
+    
+
+cs_students = student_generator(student_list, "Computer Science")
+for s in cs_students:
+        print(s)
