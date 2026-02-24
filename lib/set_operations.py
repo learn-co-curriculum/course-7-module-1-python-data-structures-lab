@@ -5,10 +5,4 @@ def unique_majors(student_list):
     Return a set of unique student majors using set comprehension.
     Extract the major field from each student record.
     """
-    major_set = set()
-
-    for student in student_list:
-        major = student[2]
-
-        major_set.add(major)
-    return major_set
+    pass
