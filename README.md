@@ -163,6 +163,12 @@ generator_expression = (n * 2 for n in number_list if n > 3)
 - **Apply generator expressions** for memory efficiency.
 - **Update README** to document functionality.
 
+## Core Functionality
+- **Dynamic Filtering**: Filter students by major using list comprehensions.
+- **Unique Majors**: Track unique student majors efficiently using set comprehensions.
+- **Lazy Processing**: Handle datasets memory-efficiently with generator expressions.
+- **Formatted Display**: Clean, readable student data formatting for easy display.
+
 ## Conclusion
 
 By mastering **Sequences, List Comprehensions, Generator Expressions, Dictionaries, and Sets**, developers can:
