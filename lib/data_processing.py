@@ -2,18 +2,28 @@
 
 def format_student_data(student):
     """
-    Format student data for display.
-    The function should return a formatted string containing:
-    - Student ID
-    - Student Name
-    - Major
-    such as: "ID: 10 | Name: Louis Medina | Major: Computer Science"
+    Format a student's information into a readable string.
+
+    Args:
+        student (tuple): A student record in the format
+            (ID, Name, Major).
+
+    Returns:
+        str: A formatted string containing the student's ID,
+        name, and major.
     """
-    pass
+    return (f"ID: {student[0]} | Name: {student[1]} | Major: {student[2]}")
+
 
 def display_students(student_list):
     """
-    Display all student records.
-    Loop through the student_list and print each student using format_student_data().
+    Display all students in the provided student list.
+
+    Args:
+        student_list (list): A list of student tuples.
+
+    Returns:
+        None
     """
-    pass
+    for student in student_list:
+        print(format_student_data(student))
