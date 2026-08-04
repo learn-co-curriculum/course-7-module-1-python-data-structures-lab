@@ -2,9 +2,19 @@
 
 def filter_students_by_major(student_list, major):
     """
-    Return a filtered list of students by major using a list comprehension.
-    The function should:
-    - Check if a student's major matches the given major (case insensitive).
-    - Return a new list containing only students that match.
+    Return a list of students whose major matches the specified major.
+
+    Args:
+        student_list (list): A list of student tuples in the format
+            (ID, Name, Major).
+        major (str): The major to filter by.
+
+    Returns:
+        list: A list of student tuples whose major matches the
+        specified major, ignoring case.
     """
-    pass
+    return [
+        student
+        for student in student_list
+        if student[2].lower() == major.lower()
+    ]
